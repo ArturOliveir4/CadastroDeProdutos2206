@@ -1,0 +1,44 @@
+﻿@model UsuarioModel
+
+@{
+    ViewData["Title"] = "Detalhes";
+}
+
+<div class="text-center">
+    <div>
+        <h1 class="display-4">Detalhes do Usuário @Model.Nome</h1>
+    </div>
+</div>
+
+<table id="table-usuario" class="table">
+  <thead  class="detalhes_tabela_head">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Login</th>
+      <th scope="col">Senha</th>
+      <th scope="col">Email</th>
+      <th scope="col">Perfil</th>
+      <th scope="col">Data de Cadastro</th>
+      <th scope="col">Data de Atualizção</th>
+    </tr>
+  </thead>
+  <tbody class="detalhes_tabela_body">
+      <tr>
+                  <th scope="row">@Model.Id</th>
+                  <td>@Model.Nome</td>
+                  <td>@Model.Login</td>
+                  <td>@Model.Senha</td>
+                  <td>@Model.Email</td>
+                  <td>@Model.Perfil</td>
+                  <td>@Model.DataDeCadastro</td>
+                  <td>@Model.DataAtualizacao</td>
+      </tr>
+ </tbody>
+</table>  
+
+<br />
+
+<div class="text-center">
+    <a class="btn btn-primary" role="button" asp-controller="Usuario" asp-action="Lista">Voltar</a>
+</div>

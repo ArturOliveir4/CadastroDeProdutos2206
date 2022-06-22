@@ -1,0 +1,35 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    background-image: url('https://www.ajetur.com.br/wp-content/uploads/2017/11/background-site.jpg');
+    margin: 0;
+    margin-bottom: 60px;
+}
+
+.field-validation-error {
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.detalhes_tabela_head {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: darkred;
+}
+
+.detalhes_tabela_body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: darkslategray;
+}

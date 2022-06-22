@@ -1,0 +1,37 @@
+﻿@model ProdutoModel
+
+@{
+    ViewData["Title"] = "Tela de Cadastro";
+}
+
+<div class="text-center">
+    <div>
+        <h1 class="display-4">Novo Produto</h1>
+    </div>
+</div>
+
+
+<form asp-controller="Produto" asp-action="Criar" method="post">
+    <div class="form-group">
+        <label for="Nome">Nome</label>
+        <input type="text" asp-for="Nome" class="form-control" placeholder="Digite o Nome do produto" />
+        @Html.ValidationMessageFor(x => x.Nome)
+    </div>
+
+    <div class="form-group">
+        <label for="Preco">Preço</label>
+        <input type="text" asp-for="Preco" class="form-control" placeholder="Digite o Preço do produto" />
+        @Html.ValidationMessageFor(x => x.Preco)
+    </div>
+
+    <div class="form-group">
+        <label for="Quantidade">Quantidade</label>
+        <input type="text" asp-for="Quantidade" class="form-control" placeholder="Digite a Quantidade do produto" />
+        @Html.ValidationMessageFor(x => x.Quantidade)
+    </div>
+
+    <br />
+
+    <button type="submit" class="btn btn-primary">Adicionar</button>
+    <button class="btn btn-secondary" asp-controller="Produto" asp-action="Index" role="button">Voltar</button>
+</form>

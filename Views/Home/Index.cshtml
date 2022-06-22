@@ -1,0 +1,10 @@
+﻿@model UsuarioModel
+
+@{
+    ViewData["Title"] = "Página Inicial";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bem Vindo @if (Model != null) { @Model.Nome}!</h1>
+    <p>Sistema de Controle de Produtos</p>
+</div>
